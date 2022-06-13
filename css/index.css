@@ -1,0 +1,70 @@
+/*========== Configurations ==========*/
+:root {
+    /* BACKGROUNDS */
+    --button-background: #8E2424;
+
+    /* TEXTS */
+    --default-text: #667085;
+}
+
+/*========== Generic Elements ==========*/
+body {
+    width: 80vw;
+    
+    margin: auto;
+
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*========== Generic Classes ==========*/
+
+
+/*========== Page - Top to Bottom ==========*/
+/* MAIN HEADER */
+.main-header {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+    .main-header__nav {
+        width: 60%;
+    }
+
+        .main-header__links {
+            display: flex;
+            
+            justify-content: flex-start;
+
+            padding-left: 0;
+
+            color: var(--default-text);
+
+            list-style: none;
+        }
+
+            .main-header__link:not(:first-child) {
+                margin-left: 50px;
+            }
+
+    .main-header__login-register {
+        background-color: chartreuse;
+        width: 20%;
+        vertical-align: bottom;
+    }
+
+        .main-header__buttom {
+            background-color: crimson;
+
+            display: inline-block;
+
+            padding: 0.6rem 1rem;
+        }
+
+/* RESPONSIVE LAYOUTS */
+/* TABLET */
