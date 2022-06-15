@@ -15,6 +15,7 @@
     --tittle-text: #101828;
     --default-text: #667085;
     --white-text: #fff;
+    --info-text: #8E2424;
 
     /* Fonts */
     --Inter-font: 'Inter', Arial, Helvetica, sans-serif;
@@ -27,6 +28,7 @@ body {
     margin: auto;
 
     font-size: 16px;
+    font-family: var(--Inter-font);
 }
 
 a {
@@ -47,7 +49,6 @@ a {
     justify-content: space-between;
 
     color: var(--default-text);
-    font-family: var(--Inter-font);
 }
 
     .main-header__nav {
@@ -87,3 +88,31 @@ a {
 
                 color: var(--white-text);
             }
+
+/* ABOUT US */
+.header-about-us {
+    margin: 5rem auto;
+
+    text-align: center;
+}
+
+    .header-about-us__info {
+        color: var(--info-text);
+        font-weight: 600;
+    }
+
+    .header-about-us__tittle {
+        font-size: 3rem;
+    }
+
+    .header-about-us__text {
+        width: 50%;
+
+        margin: auto;
+
+        color: var(--default-text);
+        font-weight: 400;
+        font-size: 1.1rem;
+
+        line-height: 2rem;
+    }
