@@ -44,7 +44,7 @@ a {
 .main-header {
     display: flex;
 
-    padding: 1.1rem;
+    padding: 1.1rem auto;
 
     justify-content: space-between;
 
@@ -116,3 +116,34 @@ a {
 
         line-height: 2rem;
     }
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 6rem auto;
+}
+
+    .card {
+        flex-basis: 25%;
+    }
+
+        .card__number {
+            margin: auto;
+
+            color: var(--info-text);
+            font-weight: 600;
+            font-size: 3.75rem;
+        }
+
+        .card__tittle {
+            color: var(--tittle-text);
+            font-size: 1.125rem;
+        }
+
+        .card__description {
+            width: 80%;
+
+            color: var(--default-text);
+        }
