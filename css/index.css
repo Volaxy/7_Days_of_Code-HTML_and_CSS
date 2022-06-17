@@ -31,6 +31,12 @@ body {
     font-family: var(--Inter-font);
 }
 
+ul {
+    padding-left: 0;
+
+    list-style: none;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -55,12 +61,8 @@ a {
         width: 65%;
     }
 
-        .main-header__items {
+        .main-header__list {
             display: flex;
-
-            padding-left: 0;
-
-            list-style: none;
         }
 
             .main-header__item:first-child {
@@ -185,3 +187,47 @@ a {
     .search-talents__image {
         width: 100%;
     }
+
+/* VACACIES */
+.vacacies {
+    width: 65%;
+
+    margin: auto;
+}
+
+    .vacacies__design,
+    .vacacies__software-development {
+        margin-top: 4rem;
+    }
+
+        .vacacies__tittle {
+            color: var(--tittle-text);
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        .vacacies__item {
+            border: 1px solid var(--light-border);
+            border-radius: 1rem;
+            padding: 1.5rem 1.5rem 1.75rem;
+        }
+
+            .vacacies__item:not(:first-child) {
+                margin-top: 1.5rem;
+            }
+
+            .vacacies__item__tittle {
+                margin-bottom: 2rem;
+
+                color: var(--tittle-text);
+                font-size: 1.125rem;
+                font-weight: 500;
+            }
+
+            .vacacies__item__description {
+                color: var(--default-text);
+            }
+
+                .vacacies__item__description__work-way {
+                    margin-right: 1.5rem;
+                }
