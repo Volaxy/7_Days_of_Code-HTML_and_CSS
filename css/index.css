@@ -231,3 +231,41 @@ a {
                 .vacacies__item__description__work-way {
                     margin-right: 1.5rem;
                 }
+
+/* COMMENTS */
+.comments {
+    background-color: var(--opinion-background);
+
+    margin: 6rem auto;
+    border-radius: 1rem;
+    padding: 4rem;
+
+    text-align: center;
+}
+
+    .comments__tag {
+        color: var(--tag-text);
+        font-weight: 600;
+        font-size: .875rem;
+    }
+
+    .comments__tittle {
+        color: var(--tittle-text);
+        font-size: 2.25rem;
+    }
+
+    .comments__name {
+        margin: 1rem auto .25rem;
+
+        color: var(--tittle-text);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .comments__office {
+        margin-top: .25rem;
+
+        color: var(--default-text);
+        font-size: .875rem;
+        font-weight: 400;
+    }
