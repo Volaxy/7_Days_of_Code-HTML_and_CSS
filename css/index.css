@@ -10,12 +10,14 @@
 
     /* BORDERS */
     --light-border: #EAECF0;
+    --input-border: #D0D5DD;
 
     /* TEXTS */
     --tittle-text: #101828;
     --default-text: #667085;
     --white-text: #fff;
     --tag-text: #8E2424;
+    --copyright-text: #98A2B3;
 
     /* Fonts */
     --Inter-font: 'Inter', Arial, Helvetica, sans-serif;
@@ -23,12 +25,14 @@
 
 /*========== Generic Elements ==========*/
 body {
+    font-size: 16px;
+    font-family: var(--Inter-font);
+}
+
+main {
     width: 80vw;
     
     margin: auto;
-
-    font-size: 16px;
-    font-family: var(--Inter-font);
 }
 
 ul {
@@ -48,8 +52,11 @@ a {
 /*========== Page - Top to Bottom ==========*/
 /* MAIN HEADER */
 .main-header {
+    width: 80vw;
+    
     display: flex;
-
+    
+    margin: auto;
     padding: 1.1rem auto;
 
     justify-content: space-between;
@@ -268,4 +275,55 @@ a {
         color: var(--default-text);
         font-size: .875rem;
         font-weight: 400;
+    }
+
+/* FOOTER */
+.footer {
+    background-color: var(--footer-background);
+    
+    padding: 6rem 0;
+
+    text-align: center;
+}
+
+    .footer__tittle {
+        color: var(--tittle-text);
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    .footer__description {
+        color: var(--default-text);
+        font-size: 1.25rem;
+    }
+
+    .footer__form {
+        margin: 2.5rem auto 2rem;
+    }
+
+        .footer__form__email {
+            background-color: white;
+
+            margin-right: 1rem;
+            border: 1px solid var(--input-border);
+            border-radius: .5rem;
+            padding: .75rem 1rem;
+        }
+
+            .footer__form__email::placeholder {
+                color: var(--default-text);
+            }
+
+        .footer__form__buttom {
+            background-color: var(--button-background);
+
+            border: none;
+            border-radius: .5rem;
+            padding: .75rem 1.25rem;
+
+            color: var(--white-text);
+        }
+
+    .footer__copyright {
+        color: var(--copyright-text);
     }
